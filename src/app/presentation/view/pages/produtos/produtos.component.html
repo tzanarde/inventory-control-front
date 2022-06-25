@@ -1,0 +1,39 @@
+<div class="container">
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col">Código</th>
+        <th scope="col">Cliente</th>
+        <th scope="col">Categoria</th>
+        <th scope="col">Descrisão</th>
+        <th scope="col">Quantidade</th>
+        <th scope="col">Código de Barras </th>
+        <th scope="col">Ação</th>
+      </tr>
+    </thead>
+
+    <tbody *ngFor="let employee of employees">
+      <tr>
+        <!-- <td scope="col"> {{ employee.id }}</td>
+        <td scope="col"> {{ employee.cliente }}</td>
+        <td scope="col"> {{ employee.categoria }}</td>
+        <td scope="col"> {{ employee.descricao }}</td>
+        <td scope="col"> {{ employee.quantidade }} </td>
+        <td scope="col"> {{ employee.codigobarras }}</td> -->
+
+
+        <td scope="col"> {{ employee.client_id }}</td>
+        <td scope="col"> {{ employee.category_id }}</td>
+        <td scope="col"> {{ employee.description }}</td>
+        <td scope="col"> {{ employee.quantity }} </td>
+        <td scope="col"> {{ employee.barcode }}</td>
+
+        <td scope="col">
+          <button (click)="deleteEmployee(employee.id)" mat-button color="accent">
+            Deletar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

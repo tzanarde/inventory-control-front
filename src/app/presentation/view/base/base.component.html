@@ -1,0 +1,58 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="justify-content-between">
+
+    <span class="fill-remaining-space">
+      <button mat-icon-button [matMenuTriggerFor]="menu2">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu2="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>
+          <mat-icon>home</mat-icon>
+          <!-- <span>Home</span> -->
+          <a routerLink="/homepage" routerLinkActive="active">Home</a>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>people_outline</mat-icon>
+          <!-- <span>Produtos</span> -->
+          <a routerLink="/produtos" routerLinkActive="active">Produtos</a>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>videocam</mat-icon>
+          <!-- <span>Clientes</span> -->
+          <a routerLink="/clientes" routerLinkActive="active">Clientes</a>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          <!-- <span>Categorias</span> -->
+          <a routerLink="/categorias" routerLinkActive="active">Categorias</a>
+        </button>
+      </mat-menu>
+    </span>
+
+    <span class="logo2"><img src="../../../../assets/images/post_unisal.png"></span>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+<mat-menu #menu="matMenu" class="menu-user">
+  <mat-card class="menu-card" *ngIf="usuario">
+    <mat-card-header>
+      <div mat-card-avatar class="menu-card-header-image"></div>
+      <mat-card-title>{{ 'TXT_OLA' | translate }}, {{usuario.username}}</mat-card-title>
+      <mat-card-subtitle>{{usuario.email}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <div class="m-0 row justify-content-end">
+        <button mat-button (click)="logout()">{{ 'TXT_SAIR' | translate }}</button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</mat-menu>
+
+
+
+<router-outlet></router-outlet>

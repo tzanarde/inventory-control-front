@@ -1,0 +1,21 @@
+export class EmployeeModel {
+    id: number = 0;
+    vara: string = '';
+    processo: string = '';
+    nome: string = '';
+    datas: string = '';
+    tipo: string = '';
+    escritorio: string = '';
+    subclasse: string = '';
+    NovaVara: string = '';
+    NovoProcesso: string = '';
+    NovoNome: string = '';
+    TipoPlano: string = '';
+    NumeroMatricula: string = '';
+    DataConsulta: string = '';
+    SaldoPlano: string = '';
+    DataNascimentoParticipante: string = '';
+    NomeResponsavelFinanceiro: string = '';
+    CPFResposavelFinanceiro: string = '';
+    SituacaoPlano: string = '';
+  }

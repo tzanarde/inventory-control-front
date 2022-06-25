@@ -1,0 +1,47 @@
+.menu-card {
+  max-width: 400px;
+
+  .mat-card-header {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.menu-card-header-image {
+  background-image: url('src/assets/images/img-avatar.jpg');
+  background-size: cover;
+  background-color: #ccc;
+}
+
+::ng-deep {
+  .menu-user {
+    .mat-menu-content:not(:empty) {
+      padding: 0;
+    }
+  }
+}
+
+.logo2 {
+  float: left;
+  display: block;
+  width: 100%;
+}
+
+.mat-toolbar.mat-primary {
+  background: #fff ;
+  height: 80px;
+  color: #3f51b5;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #3f51b5;
+}
+
+::ng-deep .mat-menu-content {
+  min-height: 100vh !important;
+  overflow: hidden !important;
+}
+
+::ng-deep .mat-menu-panel  {
+  overflow: hidden !important;
+  margin-top: 80px !important;
+  margin-left: 0;
+}

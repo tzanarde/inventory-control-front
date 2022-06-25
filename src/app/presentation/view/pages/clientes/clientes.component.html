@@ -1,0 +1,24 @@
+<div class="container">
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <!-- <th scope="col">Código</th> -->
+        <th scope="col">Nome</th>
+        <th scope="col">Endereço</th>
+        <th scope="col">Telefone</th>
+
+      </tr>
+    </thead>
+
+    <tbody *ngFor="let employee of employees">
+      <tr>
+        <!-- <td scope="col"> {{ employee.id }}</td> -->
+        <td scope="col"> {{ employee.name }}</td>
+        <td scope="col"> {{ employee.address }}</td>
+        <td scope="col"> {{ employee.phone }}</td>
+
+      </tr>
+    </tbody>
+
+  </table>
+</div>

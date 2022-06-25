@@ -1,0 +1,18 @@
+<div class="container">
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col">Código</th>
+        <th scope="col">Descrição</th>
+      </tr>
+    </thead>
+
+    <tbody *ngFor="let employee of employees">
+      <tr>
+        <td scope="col"> {{ employee.client_id }}</td>
+        <td scope="col"> {{ employee.description }}</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>

@@ -1,0 +1,78 @@
+:host {
+  display: flex;
+  flex: 1;
+
+  section {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background: linear-gradient(0deg, rgba(65, 17, 240, 0.3), rgba(77, 24, 224, 0.3)), url("../../../../../assets/images/Capa-2-1.jpg");
+    .container {
+
+    }
+  }
+}
+
+.col-12 {
+  padding: 5px;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  border-radius: 5px;
+  width: 100% !important;
+  height: 57px;
+  input {
+    color: #fff !important;
+  }
+}
+
+
+// ::ng-deep .mat-raised-button {
+//   width: 100%;
+//   height: 60px;
+// }
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline:hover {
+  color: orange !important;
+}
+
+::ng-deep .mat-form-field-flex:hover {
+  color: orange !important;
+}
+
+.mat-raised-button.mat-primary {
+  background-color: red;
+  border: 1px solid #fff;
+}
+
+.boxone {
+  width: 100%;
+  min-height: auto;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 100%;
+  min-height: auto;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
